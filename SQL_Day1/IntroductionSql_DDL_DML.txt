@@ -56,7 +56,7 @@ describe/desc   table_name;
 
 DDL - Data Definition Language
 ==============================
-CREATE , ALTER , DROP , TRUNCATE
+CREATE , ALTER , DROP , TRUNCATE , RENAME
 
 
 CREATE TABLE  employees(
