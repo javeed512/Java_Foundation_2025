@@ -68,16 +68,7 @@ CREATE Database  testdb;
 use testdb;
 
 
-CREATE Table Employee (
-    Eid Integer(3) PRIMARY KEY , 
-     EName varchar(20), 
-     Salary Double(7,2),
-     Comm    Decimal(7),
-     Job   varchar(30),
-     DOJ    Date , 
-     Mid   Integer(3) 
-     	
-  );
+	
 
 
 Ex:
@@ -104,12 +95,9 @@ insert records , update records, delete records in tables.
 INSERT INTO  Employee values(101,'King',50000,null,'President','2020-12-01',null);
 
 INSERT INTO  Employee values(102,'Smith',45000,null,'Manager','2021-09-23',101);
-
-
 INSERT INTO  Employee values(103,'Ford',40000,null,'Manager','2022-04-15',101);
 
 INSERT INTO  Employee values(104,'Tom',30000,1500,'Developer','2023-10-18',102);
-
 INSERT INTO  Employee values(105,'Scott',35000,1000,'Developer','2023-12-25',102);
 
 
@@ -120,7 +108,7 @@ INSERT INTO  Employee values(107,'Ravi',22000,4000,'Tester',current_date-1,103);
 Example for inserting multiple records:
 
 
-INSERT INTO  Employee values(108,'Adam',47000,null,'Analyst','2024-01-01',101) , 							(109,'javeed',47000,null,'manager','2024-01-01',101) ;
+INSERT INTO  Employee values(108,'Adam',47000,null,'Analyst','2024-01-01',101) , 							(109,'javeed',47000,null,'Manager','2024-01-01',101) ;
 
 
 INSERT INTO Employee(Eid,Ename,Doj)   values(110,'anil','2024-01-19');
