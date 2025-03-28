@@ -181,6 +181,32 @@ SUB QUERY instead of Table Name:
 ----------------------------------
 mysql> select  eid,ename,salary,job , dno   from   (select  eid,ename,salary , job ,dno from Employees )  as  E1;
 
+EXISTS Operators using Subquery
+---------------------------------
 
 
+mysql> select * from Employee Where EXISTS (Select dname from Dept where Employee.dno = Dept.dno AND Employee.salary > 40000);
++-----+--------+----------+------+-----------+------------+------+------+
+| Eid | EName  | Salary   | Comm | Job       | DOJ        | Mid  | dno  |
++-----+--------+----------+------+-----------+------------+------+------+
+| 101 | King   | 50000.00 | NULL | President | 2020-12-01 | NULL |   10 |
+| 102 | Smith  | 45000.00 | NULL | Manager   | 2021-09-23 |  101 |   10 |
+| 108 | Adam   | 47000.00 | NULL | Analyst   | 2024-01-01 |  101 |   30 |
+| 109 | javeed | 48000.00 | NULL | Manager   | 2024-01-01 |  101 |   40 |
++-----+--------+----------+------+-----------+------------+------+------+
+
+mysql> select * from Employee Where EXISTS (Select dno from Dept  where Employee.dno = dept.dno);
++-----+--------+----------+------+-----------+------------+------+------+
+| Eid | EName  | Salary   | Comm | Job       | DOJ        | Mid  | dno  |
++-----+--------+----------+------+-----------+------------+------+------+
+| 101 | King   | 50000.00 | NULL | President | 2020-12-01 | NULL |   10 |
+| 102 | Smith  | 45000.00 | NULL | Manager   | 2021-09-23 |  101 |   10 |
+| 103 | Ford   | 40000.00 | NULL | Manager   | 2022-04-15 |  101 |   20 |
+| 104 | Tom    | 30000.00 | 1500 | Developer | 2023-10-18 |  102 |   10 |
+| 105 | Scott  | 35000.00 | 1000 | Developer | 2023-12-25 |  102 |   10 |
+| 106 | Jerry  | 25000.00 | 3000 | Tester    | 2025-03-26 |  103 |   20 |
+| 107 | Ravi   | 22000.00 | 4000 | Tester    | 2025-03-25 |  103 |   20 |
+| 108 | Adam   | 47000.00 | NULL | Analyst   | 2024-01-01 |  101 |   30 |
+| 109 | javeed | 48000.00 | NULL | Manager   | 2024-01-01 |  101 |   40 |
++-----+--------+----------+------+-----------+------------+------+------+
 
