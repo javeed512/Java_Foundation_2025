@@ -5,6 +5,7 @@ import java.util.List;
 import com.hexaware.ems.dao.EmployeeDaoImp;
 import com.hexaware.ems.dao.IEmployeeDao;
 import com.hexaware.ems.entity.Employee;
+import com.hexaware.ems.exceptions.EmployeeNotFoundException;
 
 public class EmployeeServiceImp  implements IEmployeeService{
 	
@@ -33,5 +34,41 @@ public class EmployeeServiceImp  implements IEmployeeService{
 		
 		return dao.getAllEmployees();
 	}
+
+	@Override
+	public List<Employee> getBySalaryGT(double sal) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Employee getByEid(int eid) throws EmployeeNotFoundException {
+
+
+		return dao.getByEid(eid);
+	}
+	
+	
+	
+	
+	    public static boolean   validateData(Employee emp) {
+	    	
+	    	boolean flag = false;
+	    	
+	    	if(emp.getEid() > 99 &&  emp.getEname().length()  > 3 && emp.getSalary() > 5000) {
+	    		
+	    		
+	    		flag = true;
+	    		
+	    	}
+	    	
+	    	return flag;
+	    	
+	    	
+	    }
+	
+	
+	
+	
 
 }
