@@ -1,0 +1,39 @@
+
+
+Java is  strongly typed programming lang:
+----------------------------------------
+int x = 10;  
+
+x = "hello";  //invalid
+
+
+
+Javascript  is loosely typed
+-----------------------------
+
+var  x = 10;
+
+ x = "hello";  // valid
+
+var   account_Number1 =  224466;
+
+   var   123account ; // invalid
+
+  <h1 id="hid"  name="hname">Welcome to HTML</h1>
+
+
+
+Object Types in JS
+
+Number
+String
+Boolean
+Date
+Math
+Object
+
+
+
+
+
+

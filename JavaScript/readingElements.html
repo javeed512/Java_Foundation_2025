@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+        function  readData(){
+
+                 var element1 =   document.getElementById("hid");
+
+                 console.log(element1)
+
+                 console.log(element1.innerText)
+
+                 element1.innerText = "Welcome to HTML";
+
+                    
+
+
+
+        }
+
+
+        function   getData(){
+
+        var elements =        document.getElementsByName("n1");
+
+
+                
+                console.log(elements)
+
+
+                console.log(elements[0].innerHTML)
+
+
+        var  allElements =        document.getElementsByTagName("h1");
+
+                console.log(allElements);
+
+                console.log(allElements[0].innerText)
+
+        }
+
+    </script>
+
+</head>
+<body background="yellow">
+    
+    <h1 id="hid"  >Hello Friends</h1>
+
+    <button type="button"  onclick="readData()" >Show</button>  <br>
+
+
+    <button type="button" onclick="getData()">Get Data</button>
+
+
+  <h1 name="n1" >Javeed</h1>
+  <h2  name="n1">Tom</h2>
+  <h3 name="n1">Smith</h3>
+
+
+</body>
+</html>
