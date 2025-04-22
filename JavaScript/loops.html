@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <script>
+
+            function  f1(){
+
+                var   ar =  [2,4,6,8,10];  // array of number/int data type
+
+                console.log("for loop")
+
+                for(var i=0; i<ar.length ; i++){
+
+                        console.log(ar[i])
+
+                }
+
+                var j =0;
+
+                    console.log("while loop")
+
+                while( j < ar.length){
+
+                    console.log(ar[j])
+
+                            j++;
+
+                }
+
+
+
+                console.log("for Each loop")
+
+
+                   ar.forEach( (n)=>{ console.log(n) } );
+
+                   
+
+
+            }
+
+
+
+         
+
+    </script>
+
+
+
+
+</head>
+<body>
+    
+    <button type="button" onclick="f1()">For Loop</button>  <br>
+
+
+</body>
+</html>

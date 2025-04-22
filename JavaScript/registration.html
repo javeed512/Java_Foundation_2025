@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+    function  getData(){
+
+
+         var uname =       document.getElementById("uid").value;
+
+         var pwd =       document.getElementById("pwd").value;
+
+         alert("welcome "+uname +" your password is" +pwd)
+
+
+    }
+
+
+       function    f2(){
+
+            
+        var userElement =       document.getElementById("uid");
+
+                userElement.style = "background-color:yellow"
+
+
+               
+
+       }
+
+       function  f3(){
+
+
+        var userElement =       document.getElementById("uid");
+
+                userElement.style = "background-color : red"
+
+                
+
+       }
+
+       function f4(){
+
+
+          var body =    document.getElementById("bid");
+
+                body.style = "background-color : aqua"
+
+       }
+
+
+
+
+
+
+     </script>
+</head>
+<body  id="bid" onfocus="f4()">
+
+
+    <br/>
+
+    <form  action="hello.html" method="post" onsubmit="getData()" >
+
+
+            User Name: <input type="text"  id="uid"  required  onfocus="f2()"    onblur="f3()" />  <br>
+
+            Password:  <input type="password" id="pwd"  required  value="1234">  <br>
+
+                <button type="submit"> Submit</button>
+
+
+
+    </form>
+
+
+    
+</body>
+</html>

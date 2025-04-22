@@ -46,6 +46,20 @@
 
         }
 
+
+        function testEvent(){
+
+
+             var   buttonElement =       document.getElementById("b1");
+
+             console.log(buttonElement)
+
+             buttonElement.click();
+
+
+        }
+
+
     </script>
 
 </head>
@@ -53,7 +67,17 @@
     
     <h1 id="hid"  >Hello Friends</h1>
 
-    <button type="button"  onclick="readData()" >Show</button>  <br>
+
+    <button type="button"  onclick="testEvent()">Test</button>
+
+    <br>
+    <br>
+
+
+    <button type="button"  id="b1" onclick="readData()" >Show</button> 
+    
+    
+    <br>
 
 
     <button type="button" onclick="getData()">Get Data</button>
