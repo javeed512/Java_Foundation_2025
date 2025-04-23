@@ -1,0 +1,69 @@
+What is Let and Const keyword?
+
+var  x = 10;
+
+function  f1(){
+
+	let y = 99;
+
+
+	for(let i=0;i<5;i++){
+
+		i // scope is inside loop only
+	}
+
+	console.log(i)// not possible
+}
+
+const  keyword is just like final keyword java
+
+
+
+const  x = 100;
+
+x ="javeed";	// invalid
+ 
+
+const  f1 = ()=>{
+
+	 return 10;
+         }
+
+f1 = ()=>{  // invalid
+		return "hello";
+
+	}
+
+
+
+
+
+JS Class
+Inheritance
+
+
+class  Employee{
+
+
+	var eid;
+	var ename;	
+
+
+	constructor(eid,ename){
+
+		this.eid = eid;
+		this.ename = ename;
+
+	}
+
+	m1(){
+		console.log("m1() is called..")
+
+	}
+
+
+}
+
+const   emp = new Employee(101,'javeed');
+
+
